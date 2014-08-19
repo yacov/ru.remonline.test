@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Tests" duration-ms="7602" started-at="2014-08-17T08:47:55Z" finished-at="2014-08-17T08:48:02Z">
+  <suite name="Tests" duration-ms="20877" started-at="2014-08-19T08:22:49Z" finished-at="2014-08-19T08:23:10Z">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="7602" started-at="2014-08-17T08:47:55Z" finished-at="2014-08-17T08:48:02Z">
+    <test name="Test1" duration-ms="20877" started-at="2014-08-19T08:22:49Z" finished-at="2014-08-19T08:23:10Z">
       <class name="ru.telran.sel.TestLogin">
-        <test-method status="PASS" signature="init()[pri:0, instance:ru.telran.sel.TestLogin@246ae04d]" name="init" is-config="true" duration-ms="3961" started-at="2014-08-17T11:47:55Z" finished-at="2014-08-17T11:47:58Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:ru.telran.sel.TestLogin@246ae04d]" name="init" is-config="true" duration-ms="7441" started-at="2014-08-19T11:22:49Z" finished-at="2014-08-19T11:22:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="testLogin()[pri:0, instance:ru.telran.sel.TestLogin@246ae04d]" name="testLogin" duration-ms="3641" started-at="2014-08-17T11:47:58Z" finished-at="2014-08-17T11:48:02Z">
+        <test-method status="PASS" signature="testLogin()[pri:0, instance:ru.telran.sel.TestLogin@246ae04d]" name="testLogin" duration-ms="13427" started-at="2014-08-19T11:22:57Z" finished-at="2014-08-19T11:23:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:ru.telran.sel.TestLogin@246ae04d]" name="tearDown" is-config="true" duration-ms="313" started-at="2014-08-17T11:48:02Z" finished-at="2014-08-17T11:48:02Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:ru.telran.sel.TestLogin@246ae04d]" name="tearDown" is-config="true" duration-ms="485" started-at="2014-08-19T11:23:10Z" finished-at="2014-08-19T11:23:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

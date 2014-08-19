@@ -9,11 +9,11 @@ import static org.hamcrest.CoreMatchers.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
-public class TestLogin extends ru.telran.sel.pages.TestBase {
+public class LoginTest extends ru.telran.sel.pages.TestBase {
 private boolean acceptNextAlert = true;
 private StringBuffer verificationErrors = new StringBuffer () ;
 @Test
-public void testLogin () throws Exception {
+public void loginTest () throws Exception {
     driver.get(baseUrl + "/");
     driver.findElement(By.xpath("//li[5]/span")).click();
     driver.findElement(By.id("l-auth-login")).clear();

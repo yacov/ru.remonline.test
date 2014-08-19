@@ -87,8 +87,8 @@
         <user.username></user.username>
         <user.password></user.password>
         <grid2.hub></grid2.hub>
-        <site.url></site.url>
-        <browser.name></browser.name>
+        <site.url>http://dev.remonline.ru</site.url>
+        <browser.name>firefox</browser.name>
         <browser.version></browser.version>
         <browser.platform></browser.platform>
       </properties>
@@ -99,11 +99,11 @@
     <profile>
       <id>firefox</id>
       <properties>
-        <env>firefox</env>
+        <env>test</env>
         <user.username></user.username>
         <user.password></user.password>
         <grid2.hub></grid2.hub>
-        <site.url>dev.remonline.ru</site.url>
+        <site.url>http://dev.remonline.ru</site.url>
         <browser.name>firefox</browser.name>
         <browser.version></browser.version>
         <browser.platform></browser.platform>
@@ -112,11 +112,11 @@
     <profile>
       <id>ie</id>
       <properties>
-        <env>ie</env>
+        <env>test</env>
         <user.username></user.username>
         <user.password></user.password>
-        <grid2.hub></grid2.hub>
-        <site.url>dev.remonline.ru</site.url>
+        <grid2.hub>http://telran:dc9764bd-4572-46f6-962f-d4352b892338@ondemand.saucelabs.com:80/wd/hub</grid2.hub>
+        <site.url>http://dev.remonline.ru</site.url>
         <browser.name>ie</browser.name>
         <browser.version></browser.version>
         <browser.platform></browser.platform>
@@ -128,8 +128,8 @@
         <env>chrome</env>
         <user.username></user.username>
         <user.password></user.password>
-        <grid2.hub></grid2.hub>
-        <site.url>dev.remonline.ru</site.url>
+        <grid2.hub>http://telran:dc9764bd-4572-46f6-962f-d4352b892338@ondemand.saucelabs.com:80/wd/hub</grid2.hub>
+        <site.url>http:\\dev.remonline.ru</site.url>
         <browser.name>chrome</browser.name>
         <browser.version></browser.version>
         <browser.platform></browser.platform>
