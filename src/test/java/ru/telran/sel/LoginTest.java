@@ -12,20 +12,63 @@ import org.openqa.selenium.support.ui.Select;
 public class LoginTest extends ru.telran.sel.pages.TestBase {
 private boolean acceptNextAlert = true;
 private StringBuffer verificationErrors = new StringBuffer () ;
+
+
 @Test
 public void loginTest () throws Exception {
-    driver.get(baseUrl + "/");
-    driver.findElement(By.xpath("//li[5]/span")).click();
-    driver.findElement(By.id("l-auth-login")).clear();
-    driver.findElement(By.id("l-auth-login")).sendKeys("demo30");
-    driver.findElement(By.id("l-auth-pass")).clear();
-    driver.findElement(By.id("l-auth-pass")).sendKeys("1234");
-    driver.findElement(By.xpath("//div[3]/button")).click();
+   openPage();
+	clickToLogin();
+    fillLoginForm(new LoginData("demo30", "1234"));
+    clickOnEnter();
+    
+    //verify 
     try {
       assertTrue(isElementPresent(By.xpath("//span")));
     } catch (Error e) {
       verificationErrors.append(e.toString());
     }
+    
+    exitToMain();
+
+}
+
+private void exitToMain() {
+	driver.findElement(By.cssSelector("span.text-label")).click();
+}
+
+//@Test
+public void loginVoidTest () throws Exception {
+	
+   openPage();
+	clickToLogin();
+    fillLoginForm(new LoginData("", ""));
+    clickOnEnter(); 
+    
+    try {
+        assertTrue(isElementPresent(By.cssSelector("#tooltip820641 > div.tooltip-inner")));
+      } catch (Error e) {
+        verificationErrors.append(e.toString());
+      }
+
+}
+
+private void clickOnEnter() {
+	driver.findElement(By.xpath("//div[3]/button")).click();
+}
+
+private void fillLoginForm(LoginData namePass) {
+    driver.findElement(By.id("l-auth-login")).clear();
+    driver.findElement(By.id("l-auth-login")).sendKeys(namePass.userName);
+    driver.findElement(By.id("l-auth-pass")).clear();
+    driver.findElement(By.id("l-auth-pass")).sendKeys(namePass.password);
+}
+
+private void clickToLogin() {
+    driver.findElement(By.xpath("//li[5]/span")).click();
+}
+
+private void openPage() {
+	driver.get(baseUrl + "/");
 }
 
 private boolean isElementPresent (By by) {
@@ -51,4 +94,7 @@ return alertText;
 acceptNextAlert = true;
 }
 }
+
+
+
 }
