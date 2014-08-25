@@ -5,6 +5,9 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -15,6 +18,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 
+import ru.telran.sel.LoginData;
 import ru.telran.sel.util.PropertyLoader;
 import ru.telran.sel.util.Browser;
 import ru.telran.sel.webdriver.WebDriverFactory;
@@ -36,6 +40,7 @@ public class TestBase {
 	protected String baseUrl;
 
 	protected Browser browser;
+	public boolean acceptNextAlert = true;
 
 	@BeforeClass
 	public void init() {
@@ -60,6 +65,53 @@ public class TestBase {
 		if (driver != null) {
 			driver.quit();
 		}
+	}
+
+	protected void exitToMain() {
+		driver.findElement(By.cssSelector("span.text-label")).click();
+	}
+
+	protected void clickOnEnter() {
+		driver.findElement(By.xpath("//div[3]/button")).click();
+	}
+
+	protected void fillLoginForm(LoginData namePass) {
+	    driver.findElement(By.id("l-auth-login")).clear();
+	    driver.findElement(By.id("l-auth-login")).sendKeys(namePass.userName);
+	    driver.findElement(By.id("l-auth-pass")).clear();
+	    driver.findElement(By.id("l-auth-pass")).sendKeys(namePass.password);
+	}
+
+	protected void clickToLogin() {
+	    driver.findElement(By.xpath("//li[5]/span")).click();
+	}
+
+	protected void openPage() {
+		driver.get(baseUrl + "/");
+	}
+
+	protected boolean isElementPresent(By by) {
+	try {
+	driver.findElement (by);
+	return true;
+	} catch (NoSuchElementException e) {
+	return false;
+	}
+	}
+
+	private String closeAlertAndGetItsText() {
+	try {
+	Alert alert = driver.switchTo().alert();
+	String alertText = alert.getText ();
+	if (acceptNextAlert) {
+	alert.accept();
+	} else {
+	alert.dismiss();
+	}
+	return alertText;
+	} finally {
+	acceptNextAlert = true;
+	}
 	}
 
 //	@AfterMethod
