@@ -77,9 +77,9 @@ public class TestBase {
 
 	protected void fillLoginForm(LoginData namePass) {
 	    driver.findElement(By.id("l-auth-login")).clear();
-	    driver.findElement(By.id("l-auth-login")).sendKeys(namePass.userName);
+	    driver.findElement(By.id("l-auth-login")).sendKeys(LoginData.userName);
 	    driver.findElement(By.id("l-auth-pass")).clear();
-	    driver.findElement(By.id("l-auth-pass")).sendKeys(namePass.password);
+	    driver.findElement(By.id("l-auth-pass")).sendKeys(LoginData.password);
 	}
 
 	protected void clickToLogin() {
