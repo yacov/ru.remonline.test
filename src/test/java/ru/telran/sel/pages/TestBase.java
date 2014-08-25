@@ -68,11 +68,11 @@ public class TestBase {
 	}
 
 	protected void exitToMain() {
-		driver.findElement(By.cssSelector("span.text-label")).click();
+		driver.findElement(By.xpath("//a[@class = 'b-navigation-control__item']")).click();
 	}
 
 	protected void clickOnEnter() {
-		driver.findElement(By.xpath("//div[3]/button")).click();
+		driver.findElement(By.xpath("//form[@class='b-modal']//button[@class='b-button_type_cta b-button_color_green js-submit']")).click();
 	}
 
 	protected void fillLoginForm(LoginData namePass) {
