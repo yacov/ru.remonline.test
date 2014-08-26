@@ -11,7 +11,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
 import ru.telran.sel.LoginData;
-public class AddClient extends ru.telran.sel.pages.TestBase {
+public class AddClientTests extends ru.telran.sel.pages.TestBase {
 private StringBuffer verificationErrors = new StringBuffer () ;
 @Test
 public void testAddClient (String username, String password) throws Exception {
