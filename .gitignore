@@ -52,7 +52,7 @@ $RECYCLE.BIN/
 
 # Some project files
 */target/**
-test-output/**
+*/test-output/**
 /target/classes/application.properties
 */main/resources/application.properties
 */pom.xml
