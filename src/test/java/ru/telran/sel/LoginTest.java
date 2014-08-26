@@ -13,7 +13,7 @@ public class LoginTest extends ru.telran.sel.pages.TestBase {
 private StringBuffer verificationErrors = new StringBuffer () ;
 
 
-@Test
+@Test(dataProviderClass = DataProviders.class, dataProvider = "users")
 public void loginTest (String username, String password) throws Exception {
    
 	openPage();
