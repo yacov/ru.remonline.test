@@ -12,6 +12,7 @@ import org.openqa.selenium.support.ui.Select;
 public class OptionClassTest extends ru.telran.sel.pages.TestBase {
 private boolean acceptNextAlert = true;
 private StringBuffer verificationErrors = new StringBuffer () ;
+//try set repository
 @Test
 public void testOption () throws Exception {    
 	
