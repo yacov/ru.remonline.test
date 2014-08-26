@@ -9,7 +9,7 @@ import static org.hamcrest.CoreMatchers.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
-public class OptionClassTest extends ru.telran.sel.pages.TestBase {
+public class OptionClassTests extends ru.telran.sel.pages.TestBase {
 private boolean acceptNextAlert = true;
 private StringBuffer verificationErrors = new StringBuffer () ;
 
