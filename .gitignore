@@ -50,11 +50,12 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 
-#Some project files
+# Some project files
 */target/**
 */test-output/**
-target/classes/application.properties
+/target/classes/application.properties
 */main/resources/application.properties
+<<<<<<< HEAD
 <<<<<<< HEAD
 */pom.xml
 */.classpath
@@ -64,3 +65,17 @@ target/classes/application.properties
 */.project
 */.classpath
 >>>>>>> 9695334e23810a44b7a67e0386ea86122ca5464c
+=======
+*/pom.xml
+*/.classpath
+*/.project
+
+
+
+
+
+
+
+
+
+>>>>>>> 3dcbd7d00b33901fddf494508cccddd6331e8597
