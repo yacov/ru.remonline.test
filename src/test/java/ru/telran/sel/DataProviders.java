@@ -30,7 +30,7 @@ public class DataProviders {
   }
   
   @DataProvider
-  public Iterator<Object[]> users() {
+  public static Iterator<Object[]> users() {
     List<Object[]> data = new ArrayList<Object[]>();
     for (int i = 0; i < 10; i++) {
       data.add(new Object[]{
