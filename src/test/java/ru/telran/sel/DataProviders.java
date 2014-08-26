@@ -1,5 +1,7 @@
 package ru.telran.sel;
 
+import org.testng.annotations.DataProvider;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -7,8 +9,6 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
-
-import org.testng.annotations.DataProvider;
 
 public class DataProviders {
 
@@ -30,7 +30,7 @@ public class DataProviders {
   }
   
   @DataProvider
-  public Iterator<Object[]> users() {
+  public static Iterator<Object[]> users() {
     List<Object[]> data = new ArrayList<Object[]>();
     for (int i = 0; i < 10; i++) {
       data.add(new Object[]{
@@ -40,11 +40,11 @@ public class DataProviders {
     return data.iterator();
   }
 
-  private Object generateRandomPassword() {
+    private static Object generateRandomPassword() {
     return "password" + new Random().nextInt();
   }
 
-  private Object generateRandomName() {
+    private static Object generateRandomName() {
     return "user" + new Random().nextInt();
   }
 
