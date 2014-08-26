@@ -34,7 +34,7 @@ public void testOption () throws Exception {
     clickToLogin();
  }
 private void clickSave() {
-	driver.findElement(By.xpath("//div[@id='container']/div/div/div/div[2]/button")).click();
+	driver.findElement(By.xpath("//*[@class='btn btn-primary h-mt-20']")).click();
 }
 private void fillSettingForm() {
     
