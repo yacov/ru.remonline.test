@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Aug 26 10:39:57 IDT 2014</td>
+<td>Started on:</td><td>Tue Aug 26 10:23:15 IDT 2014</td>
 </tr>
-<tr><td>Total time:</td><td>5 seconds (5104 ms)</td>
+<tr><td>Total time:</td><td>15 seconds (15112 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,10 +77,11 @@ function toggleAllBoxes() {
 <tr>
 <td title='ru.telran.sel.LoginTest.loginTest()'><b>loginTest</b><br>Test class: ru.telran.sel.LoginTest</td>
 <td><div><pre>org.testng.TestNGException: 
-DataProvider should be static: public java.util.Iterator ru.telran.sel.DataProviders.users()
-	at org.testng.internal.Parameters.findDataProvider(Parameters.java:331)
-	at org.testng.internal.Parameters.findDataProvider(Parameters.java:265)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:417)
+Method loginTest requires 2 parameters but 0 were supplied in the @Test annotation.
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:198)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:134)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:373)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:450)
 	at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
 	at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
@@ -100,12 +101,13 @@ DataProvider should be static: public java.util.Iterator ru.telran.sel.DataProvi
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div><a href='#' onClick='toggleBox("stack-trace11518836", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace11518836'><pre>org.testng.TestNGException: 
-DataProvider should be static: public java.util.Iterator ru.telran.sel.DataProviders.users()
-	at org.testng.internal.Parameters.findDataProvider(Parameters.java:331)
-	at org.testng.internal.Parameters.findDataProvider(Parameters.java:265)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:417)
+</pre></div><a href='#' onClick='toggleBox("stack-trace4508606", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace4508606'><pre>org.testng.TestNGException: 
+Method loginTest requires 2 parameters but 0 were supplied in the @Test annotation.
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:198)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:134)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:373)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:450)
 	at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
 	at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
@@ -127,7 +129,7 @@ DataProvider should be static: public java.util.Iterator ru.telran.sel.DataProvi
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 </pre></div></td>
 <td>0</td>
-<td>ru.telran.sel.LoginTest@812517</td></tr>
+<td>ru.telran.sel.LoginTest@1dff3a2</td></tr>
 </table><p>
 </body>
 </html>
