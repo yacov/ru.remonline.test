@@ -40,11 +40,11 @@ public class DataProviders {
     return data.iterator();
   }
 
-  private Object generateRandomPassword() {
+  private static Object generateRandomPassword() {
     return "password" + new Random().nextInt();
   }
 
-  private Object generateRandomName() {
+  private static Object generateRandomName() {
     return "user" + new Random().nextInt();
   }
 
