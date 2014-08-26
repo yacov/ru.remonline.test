@@ -14,10 +14,14 @@ private StringBuffer verificationErrors = new StringBuffer () ;
 
 
 @Test
-public void loginTest () throws Exception {
-   openPage();
+public void loginTest (String username, String password) throws Exception {
+   
+	openPage();
 	clickToLogin();
-    fillLoginForm(new LoginData("demo30", "1234"));
+	LoginData login = new LoginData();
+	login.userName = username;
+	login.password = password;
+    fillLoginForm(login);
     clickOnEnter();
     
     //verify 
@@ -31,7 +35,7 @@ public void loginTest () throws Exception {
 
 }
 
-//@Test
+//@Test(dataProviderClass = DataProviders.class, dataProvider = "loadUserFromFile")
 public void loginVoidTest () throws Exception {
 	
    openPage();
