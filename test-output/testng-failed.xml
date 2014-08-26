@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="5" name="Failed suite [Tests]" data-provider-thread-count="1">
+  <parameter name="path" value="/"/>
+  <test name="Test1(failed)">
+    <parameter name="path" value="/"/>
+    <groups>
+      <run>
+        <include name="positive"/>
+        <exclude name="negative"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="ru.telran.sel.LoginTests">
+        <methods>
+          <include name="loginTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- ru.telran.sel.LoginTests -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Tests] -->

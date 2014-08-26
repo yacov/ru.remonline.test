@@ -1,36 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results skipped="0" failed="0" total="1" passed="1">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Default suite" duration-ms="38438" started-at="2014-08-26T07:48:34Z" finished-at="2014-08-26T07:49:12Z">
-    <groups>
-    </groups>
-    <test name="Default test" duration-ms="38438" started-at="2014-08-26T07:48:34Z" finished-at="2014-08-26T07:49:12Z">
-      <class name="ru.telran.sel.RegistTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:ru.telran.sel.RegistTest@1e7f21]" name="init" is-config="true" duration-ms="27054" started-at="2014-08-26T10:48:34Z" finished-at="2014-08-26T10:49:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="testRegistr1()[pri:0, instance:ru.telran.sel.RegistTest@1e7f21]" name="testRegistr1" duration-ms="11319" started-at="2014-08-26T10:49:01Z" finished-at="2014-08-26T10:49:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRegistr1 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:ru.telran.sel.RegistTest@1e7f21]" name="tearDown" is-config="true" duration-ms="521" started-at="2014-08-26T10:49:13Z" finished-at="2014-08-26T10:49:13Z">
-=======
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5104" started-at="2014-08-26T07:39:57Z" finished-at="2014-08-26T07:40:02Z">
+  <suite name="Tests" duration-ms="31" started-at="2014-08-26T09:49:46Z" finished-at="2014-08-26T09:49:46Z">
     <groups>
+      <group name="positive">
+        <method signature="LoginTests.loginTest(java.lang.String, java.lang.String)[pri:0, instance:ru.telran.sel.LoginTests@feba21]" name="loginTest" class="ru.telran.sel.LoginTests"/>
+      </group> <!-- positive -->
     </groups>
-    <test name="Default test" duration-ms="5104" started-at="2014-08-26T07:39:57Z" finished-at="2014-08-26T07:40:02Z">
-      <class name="ru.telran.sel.LoginTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:ru.telran.sel.LoginTest@812517]" name="init" is-config="true" duration-ms="5025" started-at="2014-08-26T10:39:57Z" finished-at="2014-08-26T10:40:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="FAIL" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:ru.telran.sel.LoginTest@812517]" name="loginTest" duration-ms="0" started-at="2014-08-26T10:40:02Z" data-provider="users" finished-at="2014-08-26T10:40:02Z">
+    <test name="Test1" duration-ms="31" started-at="2014-08-26T09:49:46Z" finished-at="2014-08-26T09:49:46Z">
+      <class name="ru.telran.sel.LoginTests">
+        <test-method status="FAIL" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:ru.telran.sel.LoginTests@feba21]" name="loginTest" duration-ms="0" started-at="2014-08-26T12:49:46Z" data-provider="users" finished-at="2014-08-26T12:49:46Z">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
@@ -67,12 +47,11 @@ DataProvider should be static: public java.util.Iterator ru.telran.sel.DataProvi
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:ru.telran.sel.LoginTest@812517]" name="tearDown" is-config="true" duration-ms="251" started-at="2014-08-26T10:40:02Z" finished-at="2014-08-26T10:40:02Z">
->>>>>>> 3dcbd7d00b33901fddf494508cccddd6331e8597
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:ru.telran.sel.LoginTests@feba21]" name="tearDown" is-config="true" duration-ms="16" started-at="2014-08-26T12:49:46Z" finished-at="2014-08-26T12:49:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- ru.telran.sel.RegistTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- ru.telran.sel.LoginTests -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Tests -->
 </testng-results>

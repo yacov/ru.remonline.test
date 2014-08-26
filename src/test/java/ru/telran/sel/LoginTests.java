@@ -13,7 +13,7 @@ public class LoginTests extends ru.telran.sel.pages.TestBase {
 private StringBuffer verificationErrors = new StringBuffer () ;
 
 
-@Test(dataProviderClass = DataProviders.class, dataProvider = "users")
+@Test(groups = "positive", dataProviderClass = DataProviders.class, dataProvider = "users")
 public void loginTest (String username, String password) throws Exception {
    
 	openPage();
@@ -35,7 +35,7 @@ public void loginTest (String username, String password) throws Exception {
 
 }
 
-//@Test(dataProviderClass = DataProviders.class, dataProvider = "loadUserFromFile")
+@Test(groups = "negative",dataProviderClass = DataProviders.class, dataProvider = "loadUserFromFile")
 public void loginVoidTest () throws Exception {
 	
    openPage();
