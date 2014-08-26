@@ -9,11 +9,11 @@ import static org.hamcrest.CoreMatchers.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
-public class LoginTest extends ru.telran.sel.pages.TestBase {
+public class LoginTests extends ru.telran.sel.pages.TestBase {
 private StringBuffer verificationErrors = new StringBuffer () ;
 
 
-@Test
+@Test(dataProviderClass = DataProviders.class, dataProvider = "users")
 public void loginTest (String username, String password) throws Exception {
    
 	openPage();

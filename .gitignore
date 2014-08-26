@@ -59,6 +59,7 @@ target/classes/application.properties
 */pom.xml
 */.classpath
 */.project
+*/.gitignore
 =======
 <<<<<<< HEAD
 */pom.xml

@@ -1,29 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<<<<<<< HEAD
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15112" started-at="2014-08-26T07:23:15Z" finished-at="2014-08-26T07:23:30Z">
+  <suite name="Default suite" duration-ms="38438" started-at="2014-08-26T07:48:34Z" finished-at="2014-08-26T07:49:12Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15112" started-at="2014-08-26T07:23:15Z" finished-at="2014-08-26T07:23:30Z">
-      <class name="ru.telran.sel.LoginTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:ru.telran.sel.LoginTest@1dff3a2]" name="init" is-config="true" duration-ms="15074" started-at="2014-08-26T10:23:15Z" finished-at="2014-08-26T10:23:30Z">
+    <test name="Default test" duration-ms="38438" started-at="2014-08-26T07:48:34Z" finished-at="2014-08-26T07:49:12Z">
+      <class name="ru.telran.sel.RegistTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:ru.telran.sel.RegistTest@1e7f21]" name="init" is-config="true" duration-ms="27054" started-at="2014-08-26T10:48:34Z" finished-at="2014-08-26T10:49:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="FAIL" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:ru.telran.sel.LoginTest@1dff3a2]" name="loginTest" duration-ms="0" started-at="2014-08-26T10:23:30Z" finished-at="2014-08-26T10:23:30Z">
+        <test-method status="PASS" signature="testRegistr1()[pri:0, instance:ru.telran.sel.RegistTest@1e7f21]" name="testRegistr1" duration-ms="11319" started-at="2014-08-26T10:49:01Z" finished-at="2014-08-26T10:49:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistr1 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:ru.telran.sel.RegistTest@1e7f21]" name="tearDown" is-config="true" duration-ms="521" started-at="2014-08-26T10:49:13Z" finished-at="2014-08-26T10:49:13Z">
+=======
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="5104" started-at="2014-08-26T07:39:57Z" finished-at="2014-08-26T07:40:02Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="5104" started-at="2014-08-26T07:39:57Z" finished-at="2014-08-26T07:40:02Z">
+      <class name="ru.telran.sel.LoginTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:ru.telran.sel.LoginTest@812517]" name="init" is-config="true" duration-ms="5025" started-at="2014-08-26T10:39:57Z" finished-at="2014-08-26T10:40:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="FAIL" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:ru.telran.sel.LoginTest@812517]" name="loginTest" duration-ms="0" started-at="2014-08-26T10:40:02Z" data-provider="users" finished-at="2014-08-26T10:40:02Z">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
-Method loginTest requires 2 parameters but 0 were supplied in the @Test annotation.]]>
+DataProvider should be static: public java.util.Iterator ru.telran.sel.DataProviders.users()]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
-Method loginTest requires 2 parameters but 0 were supplied in the @Test annotation.
-	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:198)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:134)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:373)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:450)
+DataProvider should be static: public java.util.Iterator ru.telran.sel.DataProviders.users()
+	at org.testng.internal.Parameters.findDataProvider(Parameters.java:331)
+	at org.testng.internal.Parameters.findDataProvider(Parameters.java:265)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:417)
 	at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
 	at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
@@ -49,11 +67,12 @@ Method loginTest requires 2 parameters but 0 were supplied in the @Test annotati
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:ru.telran.sel.LoginTest@1dff3a2]" name="tearDown" is-config="true" duration-ms="481" started-at="2014-08-26T10:23:31Z" finished-at="2014-08-26T10:23:31Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:ru.telran.sel.LoginTest@812517]" name="tearDown" is-config="true" duration-ms="251" started-at="2014-08-26T10:40:02Z" finished-at="2014-08-26T10:40:02Z">
+>>>>>>> 3dcbd7d00b33901fddf494508cccddd6331e8597
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- ru.telran.sel.LoginTest -->
+      </class> <!-- ru.telran.sel.RegistTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
