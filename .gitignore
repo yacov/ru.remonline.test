@@ -54,3 +54,7 @@ $RECYCLE.BIN/
 */target/**
 */test-output/**
 target/classes/application.properties
+*/main/resources/application.properties
+*/pom.xml
+*/.classpath
+*/.project
