@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
 <suite verbose="5" name="Failed suite [Tests]" data-provider-thread-count="1">
   <parameter name="path" value="/"/>
   <test name="Test1(failed)">
@@ -20,3 +21,18 @@
     </classes>
   </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Tests] -->
+=======
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="ru.telran.sel.AddClientTests">
+        <methods>
+          <include name="testAddClient"/>
+          <include name="init"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- ru.telran.sel.AddClientTests -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
+>>>>>>> 9eaefc3f67a62a9e8e1e6bb4eea3799543b07186
