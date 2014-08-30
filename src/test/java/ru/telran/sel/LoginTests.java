@@ -4,51 +4,55 @@ import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
 import org.testng.*;
 import org.testng.annotations.*;
+
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
+
+import ru.telran.sel.pages.TestBase;
 public class LoginTests extends ru.telran.sel.pages.TestBase {
 private StringBuffer verificationErrors = new StringBuffer () ;
 
 
-@Test(groups = "positive", dataProviderClass = DataProviders.class, dataProvider = "users")
+@Test(groups = "positive", dataProviderClass = DataProviders.class, dataProvider = "usersSimple")
 public void loginTest (String username, String password) throws Exception {
    
 	openPage();
 	clickToLogin();
 	LoginData login = new LoginData();
-	login.userName = username;
-	login.password = password;
+	LoginData.userName = username;
+	LoginData.password = password;
     fillLoginForm(login);
     clickOnEnter();
+    assertTrue(isLoggedIn());
     
-    //verify 
-    try {
-      assertTrue(isElementPresent(By.xpath("//span")));
-    } catch (Error e) {
-      verificationErrors.append(e.toString());
-    }
-    
-    exitToMain();
 
 }
 
-@Test(groups = "negative",dataProviderClass = DataProviders.class, dataProvider = "loadUserFromFile")
-public void loginVoidTest () throws Exception {
+@Test(groups = "negative",dataProviderClass = DataProviders.class, dataProvider = "usersSimpleNeg")
+public void loginNegativeTest (String username, String password) throws Exception {
 	
-   openPage();
+	openPage();
 	clickToLogin();
-    fillLoginForm(new LoginData("", ""));
-    clickOnEnter(); 
+	LoginData login = new LoginData();
+	LoginData.userName = username;
+	LoginData.password = password;
+    fillLoginForm(login);
+    clickOnEnter();
     
-    try {
-        assertTrue(isElementPresent(By.cssSelector("#tooltip820641 > div.tooltip-inner")));
-      } catch (Error e) {
-        verificationErrors.append(e.toString());
-      }
+    assertTrue(isNotLoggedIn());
+    
 
+}
+
+@AfterMethod
+public void mayBeLogout() {
+  if (isLoggedIn()) {
+	  exitToMain();
+  }
+  
 }
 
 
