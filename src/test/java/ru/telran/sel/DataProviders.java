@@ -1,7 +1,5 @@
 package ru.telran.sel;
 
-import org.testng.annotations.DataProvider;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -9,6 +7,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
+
+import org.testng.annotations.DataProvider;
 
 public class DataProviders {
 
@@ -30,7 +30,7 @@ public class DataProviders {
   }
   
   @DataProvider
-  public static Iterator<Object[]> users() {
+  public Iterator<Object[]> users() {
     List<Object[]> data = new ArrayList<Object[]>();
     for (int i = 0; i < 10; i++) {
       data.add(new Object[]{
@@ -40,26 +40,12 @@ public class DataProviders {
     return data.iterator();
   }
 
-    private static Object generateRandomPassword() {
+  private Object generateRandomPassword() {
     return "password" + new Random().nextInt();
   }
 
-    private static Object generateRandomName() {
+  private Object generateRandomName() {
     return "user" + new Random().nextInt();
   }
-    @DataProvider
-    public static Iterator<Object[]> usersSimple() {
-      List<Object[]> data = new ArrayList<Object[]>();
-      data.add(new Object[]{"demo30","1234"});
-      data.add(new Object[]{"demo29","1234"});
-      return data.iterator();
-    }
-    
-    @DataProvider
-    public static Iterator<Object[]> usersSimpleNeg() {
-      List<Object[]> data = new ArrayList<Object[]>();
-      data.add(new Object[]{" "," "});
-      data.add(new Object[]{"admin","admin"});
-      return data.iterator();
-    }
+
 }
