@@ -51,6 +51,17 @@ public void loginVoidTest () throws Exception {
 
 }
 
+<<<<<<< HEAD
+=======
+@AfterMethod
+public void mayBeLogout() {
+  if (isLoggedIn()) {
+	  exitToMain();
+  }
+  
+}
+
+>>>>>>> parent of 6ac6945... some changes
 
 
 }

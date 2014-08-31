@@ -13,7 +13,11 @@
     <classes>
       <class name="ru.telran.sel.LoginTests">
         <methods>
+<<<<<<< HEAD
           <include name="loginTest"/>
+=======
+          <include name="init"/>
+>>>>>>> parent of 6ac6945... some changes
           <include name="tearDown"/>
         </methods>
       </class> <!-- ru.telran.sel.LoginTests -->
