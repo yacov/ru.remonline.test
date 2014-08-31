@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -23,12 +24,10 @@ public class ReadingParamFiles {
 		File file = new File(path);
 
 		if (file.exists()) {
-			FileReader fr;
 			BufferedReader br;
-
 			try {
-				fr = new FileReader(path);
-				br = new BufferedReader(fr);
+				
+				br = new BufferedReader(new InputStreamReader(ReadingParamFiles.class.getResourceAsStream(path)));
 				String curLine;
 				while ((curLine = br.readLine()) != null) {					
 					rows.add(curLine.trim());

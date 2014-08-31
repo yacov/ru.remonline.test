@@ -27,7 +27,7 @@ public class EmployeeTests extends ru.telran.sel.pages.TestBase {
 		goToEmployees();
 		openAddEmplWindow();
 				
-		fillpersData("D:\\dasha\\QA\\projects\\ru.remonline.test\\params\\params.txt");
+		fillpersData("/params.data");
 		setSelect("6125");
 		checkBox();
 		
