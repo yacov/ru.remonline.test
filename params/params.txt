@@ -1,0 +1,6 @@
+l-e-name correctusername
+l-e-login correctuserlog
+l-e-password coruserpassord
+l-e-phone 1234567890123
+l-e-email mailmail@em.il
+l-e-percent 9
