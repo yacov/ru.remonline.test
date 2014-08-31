@@ -15,8 +15,8 @@ public class EmployeeTests extends ru.telran.sel.pages.TestBase {
 	private boolean acceptNextAlert = true;
 	private StringBuffer verificationErrors = new StringBuffer();
 	private ReadingParamFiles rpf = new ReadingParamFiles();
-	@Test
-	public void testAddEmpl() throws Exception {
+	@Test(groups = "positive", dataProviderClass = DataProviders.class, dataProvider = "loadEmpDataFromFile")
+	public void testAddEmpl(String name,String login,String password,String phone,String email,String percent) throws Exception {
 		openPage();
 		clickToLogin();
 		fillLoginForm(new LoginData("demo30", "1234"));
@@ -27,7 +27,7 @@ public class EmployeeTests extends ru.telran.sel.pages.TestBase {
 		goToEmployees();
 		openAddEmplWindow();
 				
-		fillpersData("/params.data");
+		fillpersData(name, login, password, phone, email, percent);
 		setSelect("6125");
 		checkBox();
 		
@@ -90,16 +90,20 @@ public class EmployeeTests extends ru.telran.sel.pages.TestBase {
 		driver.findElement(By.xpath("//td/input")).click();
 	}
 
-	private void fillpersData(String path) {
-		
-		ArrayList params =rpf.getParameters(path);
-		ArrayList tags = rpf.getTags(path);
-		
-		for(int i=0;i<params.size();i++){
-			driver.findElement(By.id((String)tags.get(i))).clear();
-			driver.findElement(By.id((String)tags.get(i))).sendKeys((String)params.get(i));
-		}
-		
+	private void fillpersData(String name,String login,String password,String phone,String email,String percent) {
+				
+		driver.findElement(By.id("l-e-name")).clear();
+		driver.findElement(By.id("l-e-name")).sendKeys(name);
+		driver.findElement(By.id("l-e-login")).clear();
+		driver.findElement(By.id("l-e-login")).sendKeys(login);
+		driver.findElement(By.id("l-e-password")).clear();
+		driver.findElement(By.id("l-e-password")).sendKeys(password);
+		driver.findElement(By.id("l-e-phone")).clear();
+		driver.findElement(By.id("l-e-phone")).sendKeys(phone);
+		driver.findElement(By.id("l-e-email")).clear();
+		driver.findElement(By.id("l-e-email")).sendKeys(email);
+		driver.findElement(By.id("l-e-percent")).clear();
+		driver.findElement(By.id("l-e-percent")).sendKeys(percent);
 	}
 
 }
