@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Tests" verbose="5" data-provider-thread-count="1">
+	<test name="Test1">
+		<parameter name="path" value="/"/>
+		  <groups>
+    <run>
+      <include name="positive"/>
+      <exclude name="negative"/>
+    </run>
+  </groups>
+		<classes>
+		    <class name="ru.telran.sel.LoginTests"/>
+		</classes>
+	</test>  
+</suite>
