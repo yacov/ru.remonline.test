@@ -2,63 +2,26 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="95" started-at="2014-08-26T09:27:46Z" finished-at="2014-08-26T09:27:46Z">
+  <suite name="Tests" duration-ms="43" started-at="2014-08-26T09:50:02Z" finished-at="2014-08-26T09:50:02Z">
     <groups>
+      <group name="positive">
+        <method signature="LoginTests.loginTest(java.lang.String, java.lang.String)[pri:0, instance:ru.telran.sel.LoginTests@87a5cc]" name="loginTest" class="ru.telran.sel.LoginTests"/>
+      </group> <!-- positive -->
     </groups>
-    <test name="Default test" duration-ms="95" started-at="2014-08-26T09:27:46Z" finished-at="2014-08-26T09:27:46Z">
-      <class name="ru.telran.sel.AddClientTests">
-        <test-method status="FAIL" signature="init()[pri:0, instance:ru.telran.sel.AddClientTests@19a0c7c]" name="init" is-config="true" duration-ms="0" started-at="2014-08-26T12:27:46Z" finished-at="2014-08-26T12:27:46Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at java.util.Properties$LineReader.readLine(Unknown Source)
-	at java.util.Properties.load0(Unknown Source)
-	at java.util.Properties.load(Unknown Source)
-	at ru.telran.sel.util.PropertyLoader.loadProperty(PropertyLoader.java:18)
-	at ru.telran.sel.pages.TestBase.init(TestBase.java:47)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="FAIL" signature="testAddClient(java.lang.String, java.lang.String)[pri:0, instance:ru.telran.sel.AddClientTests@19a0c7c]" name="testAddClient" duration-ms="0" started-at="2014-08-26T12:27:46Z" finished-at="2014-08-26T12:27:46Z">
+    <test name="Test1" duration-ms="43" started-at="2014-08-26T09:50:02Z" finished-at="2014-08-26T09:50:02Z">
+      <class name="ru.telran.sel.LoginTests">
+        <test-method status="FAIL" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:ru.telran.sel.LoginTests@87a5cc]" name="loginTest" duration-ms="0" started-at="2014-08-26T12:50:02Z" data-provider="users" finished-at="2014-08-26T12:50:02Z">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
-Method testAddClient requires 2 parameters but 0 were supplied in the @Test annotation.]]>
+DataProvider should be static: public java.util.Iterator ru.telran.sel.DataProviders.users()]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
-Method testAddClient requires 2 parameters but 0 were supplied in the @Test annotation.
-	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:198)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:134)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:373)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:450)
+DataProvider should be static: public java.util.Iterator ru.telran.sel.DataProviders.users()
+	at org.testng.internal.Parameters.findDataProvider(Parameters.java:331)
+	at org.testng.internal.Parameters.findDataProvider(Parameters.java:265)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:417)
 	at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
 	at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
@@ -83,12 +46,12 @@ Method testAddClient requires 2 parameters but 0 were supplied in the @Test anno
           </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAddClient -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:ru.telran.sel.AddClientTests@19a0c7c]" name="tearDown" is-config="true" duration-ms="0" started-at="2014-08-26T12:27:46Z" finished-at="2014-08-26T12:27:46Z">
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:ru.telran.sel.LoginTests@87a5cc]" name="tearDown" is-config="true" duration-ms="21" started-at="2014-08-26T12:50:02Z" finished-at="2014-08-26T12:50:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- ru.telran.sel.AddClientTests -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- ru.telran.sel.LoginTests -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Tests -->
 </testng-results>
