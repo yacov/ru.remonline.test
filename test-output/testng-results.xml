@@ -1,24 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" total="2" passed="1">
+<testng-results skipped="5" failed="0" total="6" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="37815" started-at="2014-08-30T22:45:01Z" finished-at="2014-08-30T22:45:39Z">
+  <suite name="Default suite" duration-ms="39772" started-at="2014-08-31T05:31:28Z" finished-at="2014-08-31T05:32:07Z">
     <groups>
       <group name="negative">
-        <method signature="LoginTests.loginNegativeTest(java.lang.String, java.lang.String)[pri:0, instance:ru.telran.sel.LoginTests@8f5fc2]" name="loginNegativeTest" class="ru.telran.sel.LoginTests"/>
+        <method signature="LoginTests.loginNegativeTest(java.lang.String, java.lang.String)[pri:0, instance:ru.telran.sel.LoginTests@d7cf62]" name="loginNegativeTest" class="ru.telran.sel.LoginTests"/>
       </group> <!-- negative -->
+      <group name="positive">
+        <method signature="LoginTests.loginTest(java.lang.String, java.lang.String)[pri:0, instance:ru.telran.sel.LoginTests@d7cf62]" name="loginTest" class="ru.telran.sel.LoginTests"/>
+      </group> <!-- positive -->
     </groups>
-    <test name="Default test" duration-ms="37815" started-at="2014-08-30T22:45:01Z" finished-at="2014-08-30T22:45:39Z">
+    <test name="Default test" duration-ms="39772" started-at="2014-08-31T05:31:28Z" finished-at="2014-08-31T05:32:07Z">
       <class name="ru.telran.sel.LoginTests">
-        <test-method status="PASS" signature="init()[pri:0, instance:ru.telran.sel.LoginTests@8f5fc2]" name="init" is-config="true" duration-ms="4159" started-at="2014-08-31T01:45:01Z" finished-at="2014-08-31T01:45:05Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:ru.telran.sel.LoginTests@d7cf62]" name="init" is-config="true" duration-ms="4306" started-at="2014-08-31T08:31:28Z" finished-at="2014-08-31T08:31:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="loginNegativeTest(java.lang.String, java.lang.String)[pri:0, instance:ru.telran.sel.LoginTests@8f5fc2]" name="loginNegativeTest" duration-ms="3523" started-at="2014-08-31T01:45:05Z" data-provider="usersSimpleNeg" finished-at="2014-08-31T01:45:09Z">
+        <test-method status="PASS" signature="loginNegativeTest(java.lang.String, java.lang.String)[pri:0, instance:ru.telran.sel.LoginTests@d7cf62]" name="loginNegativeTest" duration-ms="5363" started-at="2014-08-31T08:31:32Z" data-provider="loadUserFromFile" finished-at="2014-08-31T08:31:37Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[ ]]>
+                <![CDATA[demo30]]>
               </value>
             </param>
             <param index="1">
@@ -30,25 +33,25 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginNegativeTest -->
-        <test-method status="FAIL" signature="mayBeLogout()[pri:0, instance:ru.telran.sel.LoginTests@8f5fc2]" name="mayBeLogout" is-config="true" duration-ms="0" started-at="2014-08-31T01:45:09Z" finished-at="2014-08-31T01:45:09Z">
+        <test-method status="FAIL" signature="mayBeLogout()[pri:0, instance:ru.telran.sel.LoginTests@d7cf62]" name="mayBeLogout" is-config="true" duration-ms="0" started-at="2014-08-31T08:31:37Z" finished-at="2014-08-31T08:31:37Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Unable to locate element: {"method":"xpath","selector":"//a[@class = 'b-navigation-control__item']"}
-Command duration or timeout: 30.06 seconds
+Command duration or timeout: 30.03 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.40.0', revision: '4c5c0568b004f67810ee41c459549aa4b09c651e', time: '2014-02-19 11:13:01'
 System info: host: 'Iakov', ip: '10.0.0.1', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.7.0_65'
-Session ID: 21d4d832-e9c0-475e-aee8-b727e44b51de
+Session ID: d2629c8a-b3ea-4ce3-ab6f-40cd5466c563
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//a[@class = 'b-navigation-control__item']"}
-Command duration or timeout: 30.06 seconds
+Command duration or timeout: 30.03 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.40.0', revision: '4c5c0568b004f67810ee41c459549aa4b09c651e', time: '2014-02-19 11:13:01'
 System info: host: 'Iakov', ip: '10.0.0.1', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.7.0_65'
-Session ID: 21d4d832-e9c0-475e-aee8-b727e44b51de
+Session ID: d2629c8a-b3ea-4ce3-ab6f-40cd5466c563
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -94,35 +97,115 @@ Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unabl
 Build info: version: '2.40.0', revision: '4c5c0568b004f67810ee41c459549aa4b09c651e', time: '2014-02-19 11:13:01'
 System info: host: 'Iakov', ip: '10.0.0.1', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.7.0_65'
 Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/IAKOVV~1/AppData/Local/Temp/anonymous6644068210021186349webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8904:133)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/IAKOVV~1/AppData/Local/Temp/anonymous6644068210021186349webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:396:5)
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/IAKOVV~1/AppData/Local/Temp/anonymous3407320436022085551webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8904:133)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/IAKOVV~1/AppData/Local/Temp/anonymous3407320436022085551webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:396:5)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mayBeLogout -->
-        <test-method status="SKIP" signature="loginNegativeTest(java.lang.String, java.lang.String)[pri:0, instance:ru.telran.sel.LoginTests@8f5fc2]" name="loginNegativeTest" duration-ms="1" started-at="2014-08-31T01:45:39Z" data-provider="usersSimpleNeg" finished-at="2014-08-31T01:45:39Z">
+        <test-method status="SKIP" signature="loginNegativeTest(java.lang.String, java.lang.String)[pri:0, instance:ru.telran.sel.LoginTests@d7cf62]" name="loginNegativeTest" duration-ms="0" started-at="2014-08-31T08:32:07Z" data-provider="loadUserFromFile" finished-at="2014-08-31T08:32:07Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[admin]]>
+                <![CDATA[demo30]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[admin]]>
+                <![CDATA[demo30]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginNegativeTest -->
-        <test-method status="SKIP" signature="mayBeLogout()[pri:0, instance:ru.telran.sel.LoginTests@8f5fc2]" name="mayBeLogout" is-config="true" duration-ms="0" started-at="2014-08-31T01:45:39Z" finished-at="2014-08-31T01:45:39Z">
+        <test-method status="SKIP" signature="mayBeLogout()[pri:0, instance:ru.telran.sel.LoginTests@d7cf62]" name="mayBeLogout" is-config="true" duration-ms="0" started-at="2014-08-31T08:32:07Z" finished-at="2014-08-31T08:32:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mayBeLogout -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:ru.telran.sel.LoginTests@8f5fc2]" name="tearDown" is-config="true" duration-ms="323" started-at="2014-08-31T01:45:39Z" finished-at="2014-08-31T01:45:39Z">
+        <test-method status="SKIP" signature="loginNegativeTest(java.lang.String, java.lang.String)[pri:0, instance:ru.telran.sel.LoginTests@d7cf62]" name="loginNegativeTest" duration-ms="0" started-at="2014-08-31T08:32:07Z" data-provider="loadUserFromFile" finished-at="2014-08-31T08:32:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginNegativeTest -->
+        <test-method status="SKIP" signature="mayBeLogout()[pri:0, instance:ru.telran.sel.LoginTests@d7cf62]" name="mayBeLogout" is-config="true" duration-ms="0" started-at="2014-08-31T08:32:07Z" finished-at="2014-08-31T08:32:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mayBeLogout -->
+        <test-method status="SKIP" signature="loginNegativeTest(java.lang.String, java.lang.String)[pri:0, instance:ru.telran.sel.LoginTests@d7cf62]" name="loginNegativeTest" duration-ms="0" started-at="2014-08-31T08:32:07Z" data-provider="loadUserFromFile" finished-at="2014-08-31T08:32:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginNegativeTest -->
+        <test-method status="SKIP" signature="mayBeLogout()[pri:0, instance:ru.telran.sel.LoginTests@d7cf62]" name="mayBeLogout" is-config="true" duration-ms="0" started-at="2014-08-31T08:32:07Z" finished-at="2014-08-31T08:32:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mayBeLogout -->
+        <test-method status="SKIP" signature="mayBeLogout()[pri:0, instance:ru.telran.sel.LoginTests@d7cf62]" name="mayBeLogout" is-config="true" duration-ms="0" started-at="2014-08-31T08:32:07Z" finished-at="2014-08-31T08:32:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mayBeLogout -->
+        <test-method status="SKIP" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:ru.telran.sel.LoginTests@d7cf62]" name="loginTest" duration-ms="0" started-at="2014-08-31T08:32:07Z" data-provider="usersSimple" finished-at="2014-08-31T08:32:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[demo30]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="SKIP" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:ru.telran.sel.LoginTests@d7cf62]" name="loginTest" duration-ms="0" started-at="2014-08-31T08:32:07Z" data-provider="usersSimple" finished-at="2014-08-31T08:32:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[demo29]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="SKIP" signature="mayBeLogout()[pri:0, instance:ru.telran.sel.LoginTests@d7cf62]" name="mayBeLogout" is-config="true" duration-ms="0" started-at="2014-08-31T08:32:07Z" finished-at="2014-08-31T08:32:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mayBeLogout -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:ru.telran.sel.LoginTests@d7cf62]" name="tearDown" is-config="true" duration-ms="296" started-at="2014-08-31T08:32:08Z" finished-at="2014-08-31T08:32:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

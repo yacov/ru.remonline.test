@@ -47,13 +47,13 @@ public void loginNegativeTest (String username, String password) throws Exceptio
 
 }
 
-@AfterMethod
+/*@AfterMethod
 public void mayBeLogout() {
   if (isLoggedIn()) {
 	  exitToMain();
   }
   
-}
+}*/
 
 
 
