@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
@@ -38,6 +39,19 @@ DataProvider should be static: public java.util.Iterator ru.telran.sel.DataProvi
     </groups>
     <test name="Default test" duration-ms="37815" started-at="2014-08-30T22:45:01Z" finished-at="2014-08-30T22:45:39Z">
       <class name="ru.telran.sel.LoginTests">
+=======
+<testng-results skipped="1" failed="0" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="37815" started-at="2014-08-30T22:45:01Z" finished-at="2014-08-30T22:45:39Z">
+    <groups>
+      <group name="negative">
+        <method signature="LoginTests.loginNegativeTest(java.lang.String, java.lang.String)[pri:0, instance:ru.telran.sel.LoginTests@8f5fc2]" name="loginNegativeTest" class="ru.telran.sel.LoginTests"/>
+      </group> <!-- negative -->
+    </groups>
+    <test name="Default test" duration-ms="37815" started-at="2014-08-30T22:45:01Z" finished-at="2014-08-30T22:45:39Z">
+      <class name="ru.telran.sel.LoginTests">
+>>>>>>> parent of 6ac6945... some changes
         <test-method status="PASS" signature="init()[pri:0, instance:ru.telran.sel.LoginTests@8f5fc2]" name="init" is-config="true" duration-ms="4159" started-at="2014-08-31T01:45:01Z" finished-at="2014-08-31T01:45:05Z">
           <reporter-output>
           </reporter-output>
@@ -161,6 +175,9 @@ Driver info: driver.version: unknown
           </reporter-output>
         </test-method> <!-- mayBeLogout -->
         <test-method status="PASS" signature="tearDown()[pri:0, instance:ru.telran.sel.LoginTests@8f5fc2]" name="tearDown" is-config="true" duration-ms="323" started-at="2014-08-31T01:45:39Z" finished-at="2014-08-31T01:45:39Z">
+<<<<<<< HEAD
+>>>>>>> parent of 6ac6945... some changes
+=======
 >>>>>>> parent of 6ac6945... some changes
           <reporter-output>
           </reporter-output>

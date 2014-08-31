@@ -90,6 +90,14 @@ public class TestBase {
 		driver.get(baseUrl + "/");
 	}
 
+	 public boolean isLoggedIn() {
+		    return driver.findElements(By.xpath("//button[@class = 'b-button_type_cta b-button_color_green js-submit']")).size() > 0;
+		  }
+		  
+		  public boolean isNotLoggedIn() {
+			    return driver.findElements(By.xpath("//span[@class='js-auth-signin b-navbar__exit h-ml-10']")).size() > 0;
+			  }
+	
 	protected boolean isElementPresent(By by) {
 	try {
 	driver.findElement (by);

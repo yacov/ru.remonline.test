@@ -14,8 +14,11 @@
       <class name="ru.telran.sel.LoginTests">
         <methods>
 <<<<<<< HEAD
+<<<<<<< HEAD
           <include name="loginTest"/>
 =======
+=======
+>>>>>>> parent of 6ac6945... some changes
           <include name="init"/>
 >>>>>>> parent of 6ac6945... some changes
           <include name="tearDown"/>

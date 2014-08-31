@@ -47,5 +47,19 @@ public class DataProviders {
   private Object generateRandomName() {
     return "user" + new Random().nextInt();
   }
-
+  @DataProvider
+  public static Iterator<Object[]> usersSimple() {
+    List<Object[]> data = new ArrayList<Object[]>();
+    data.add(new Object[]{"demo30","1234"});
+    data.add(new Object[]{"demo29","1234"});
+    return data.iterator();
+  }
+  
+  @DataProvider
+  public static Iterator<Object[]> usersSimpleNeg() {
+    List<Object[]> data = new ArrayList<Object[]>();
+    data.add(new Object[]{" "," "});
+    data.add(new Object[]{"admin","admin"});
+    return data.iterator();
+  }
 }

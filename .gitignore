@@ -71,3 +71,12 @@ target/classes/application.properties
 */.classpath
 >>>>>>> 9695334e23810a44b7a67e0386ea86122ca5464c
 >>>>>>> 7a6d7e1da9b669f78d1d60ee7f0e44b7bcf5d7b7
+test-output/emailable-report.html
+test-output/emailable-report.html
+*.html
+test-output/emailable-report.html
+test-output/index.html
+test-output/junitreports/TEST-ru.telran.sel.LoginTests.xml
+test-output/old/index.html
+test-output/testng-failed.xml
+test-output/testng-results.xml

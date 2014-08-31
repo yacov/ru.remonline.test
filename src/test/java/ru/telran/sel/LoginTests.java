@@ -23,13 +23,8 @@ public void loginTest (String username, String password) throws Exception {
 	login.password = password;
     fillLoginForm(login);
     clickOnEnter();
-    
-    //verify 
-    try {
-      assertTrue(isElementPresent(By.xpath("//span")));
-    } catch (Error e) {
-      verificationErrors.append(e.toString());
-    }
+  
+    assertTrue(isLoggedIn());
     
     exitToMain();
 
@@ -43,25 +38,16 @@ public void loginVoidTest () throws Exception {
     fillLoginForm(new LoginData("", ""));
     clickOnEnter(); 
     
-    try {
-        assertTrue(isElementPresent(By.cssSelector("#tooltip820641 > div.tooltip-inner")));
-      } catch (Error e) {
-        verificationErrors.append(e.toString());
-      }
+    assertTrue(isLoggedIn());
 
 }
 
-<<<<<<< HEAD
-=======
-@AfterMethod
+
+/*@AfterMethod
 public void mayBeLogout() {
   if (isLoggedIn()) {
 	  exitToMain();
-  }
+  }*/
   
 }
 
->>>>>>> parent of 6ac6945... some changes
-
-
-}
