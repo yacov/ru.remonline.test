@@ -5,10 +5,9 @@
     <classes>
       <class name="ru.telran.sel.LoginTests">
         <methods>
+          <include name="loginNegTest"/>
           <include name="init"/>
           <include name="tearDown"/>
-          <include name="loginNegativeTest"/>
-          <include name="mayBeLogout"/>
         </methods>
       </class> <!-- ru.telran.sel.LoginTests -->
     </classes>

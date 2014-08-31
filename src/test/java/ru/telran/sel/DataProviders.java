@@ -32,7 +32,7 @@ public class DataProviders {
   @DataProvider
   public Iterator<Object[]> users() {
     List<Object[]> data = new ArrayList<Object[]>();
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < 5; i++) {
       data.add(new Object[]{
          generateRandomName(), generateRandomPassword() 
       });
@@ -41,11 +41,11 @@ public class DataProviders {
   }
 
   private Object generateRandomPassword() {
-    return "password" + new Random().nextInt();
+    return "pass" + new Random().nextInt();
   }
 
   private Object generateRandomName() {
-    return "user" + new Random().nextInt();
+    return "demo" + new Random().nextInt();
   }
   @DataProvider
   public static Iterator<Object[]> usersSimple() {
