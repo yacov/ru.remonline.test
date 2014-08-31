@@ -1,7 +1,12 @@
 package ru.telran.sel.pages;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
@@ -14,10 +19,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.Augmenter;
 import org.openqa.selenium.remote.ScreenshotException;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.*;
 
+import ru.telran.sel.DataProviders;
 import ru.telran.sel.LoginData;
 import ru.telran.sel.util.PropertyLoader;
 import ru.telran.sel.util.Browser;
@@ -41,6 +45,8 @@ public class TestBase {
 
 	protected Browser browser;
 	public boolean acceptNextAlert = true;
+	 
+		
 
 	@BeforeClass
 	public void init() {
@@ -66,6 +72,16 @@ public class TestBase {
 			driver.quit();
 		}
 	}
+	  public boolean isLoggedIn() {
+	    return driver.findElements(By.xpath("//button[@class = 'b-button_type_cta b-button_color_green js-submit']")).size() > 0;
+	  }
+	  
+	  public boolean isNotLoggedIn() {
+		    return driver.findElements(By.xpath("//span[@class='js-auth-signin b-navbar__exit h-ml-10']")).size() > 0;
+		  }
+	
+	 
+	  
 
 	protected void exitToMain() {
 		driver.findElement(By.xpath("//a[@class = 'b-navigation-control__item']")).click();

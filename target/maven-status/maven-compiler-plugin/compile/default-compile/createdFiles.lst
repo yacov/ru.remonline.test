@@ -1,6 +1,0 @@
-ru\telran\sel\pages\Page.class
-ru\telran\sel\webdriver\AuthenticatedHtmlUnitDriver.class
-ru\telran\sel\util\Browser.class
-ru\telran\sel\webdriver\WebDriverFactory.class
-ru\telran\sel\util\PropertyLoader.class
-ru\telran\sel\pages\HomePage.class
