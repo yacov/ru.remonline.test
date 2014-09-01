@@ -87,7 +87,7 @@ public class EmployeeTests extends ru.telran.sel.pages.TestBase {
 	}
 	
 	private void checkBox(){
-		driver.findElement(By.xpath("//td/input")).click();
+		driver.findElement(By.xpath("//td/input")).click();// clarify locator
 	}
 
 	private void fillpersData(String name,String login,String password,String phone,String email,String percent) {
