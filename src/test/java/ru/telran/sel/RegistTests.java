@@ -15,7 +15,10 @@ private StringBuffer verificationErrors = new StringBuffer () ;
 @Test
 public void testRegistr1 () throws Exception {
     openPage();
-    driver.findElement(By.xpath("//span[@class='js-auth-signup b-navbar__entrance h-ml-15']")).click();
+    registr();
+}
+private void registr() {
+	driver.findElement(By.xpath("//span[@class='js-auth-signup b-navbar__entrance h-ml-15']")).click();
     driver.findElement(By.id("l-auth-email")).clear();
     driver.findElement(By.id("l-auth-email")).sendKeys("Levinshtein@mail.ru");
     driver.findElement(By.id("l-auth-login")).click();
