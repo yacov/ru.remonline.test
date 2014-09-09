@@ -13,8 +13,8 @@ public class OptionClassTests extends ru.telran.sel.pages.TestBase {
 private boolean acceptNextAlert = true;
 private StringBuffer verificationErrors = new StringBuffer () ;
 
-@Test
-public void testOption () throws Exception {    
+@Test (dataProviderClass = DataProviders.class, dataProvider = "optionsFromFile")
+public void testOption (String companyName, String companyAddress, String countryfromList) throws Exception {    
 	
 	openPage();
 	clickToLogin();    
@@ -23,7 +23,11 @@ public void testOption () throws Exception {
    
     clickMyCompany();
     clickSetting();
-    fillSettingForm();
+    OptionsSettingData fillSettings = new OptionsSettingData();
+    fillSettings.companyName = companyName;
+    fillSettings.companyAddress = companyAddress;
+    fillSettings.countryfromList = countryfromList;
+    fillSettingForm(fillSettings);
     clickSave();
     try {
       assertEquals("Успешно сохранено", driver.findElement(By.xpath("//div[5]")).getText());
@@ -36,13 +40,13 @@ public void testOption () throws Exception {
 private void clickSave() {
 	driver.findElement(By.xpath("//*[@class='btn btn-primary h-mt-20']")).click();
 }
-private void fillSettingForm() {
+private void fillSettingForm(OptionsSettingData settingsData) {
     
     driver.findElement(By.id("l-settings-name")).clear();
-    driver.findElement(By.id("l-settings-name")).sendKeys("My company");
+    driver.findElement(By.id("l-settings-name")).sendKeys(settingsData.companyName);
     driver.findElement(By.id("l-settings-address")).clear();
-    driver.findElement(By.id("l-settings-address")).sendKeys("Tartar");
-    new Select(driver.findElement(By.id("js-settings-country"))).selectByVisibleText("Молдова");
+    driver.findElement(By.id("l-settings-address")).sendKeys(settingsData.companyAddress);
+    new Select(driver.findElement(By.id("js-settings-country"))).selectByVisibleText(settingsData.countryfromList);
 	
 }
 private void clickSetting() {
