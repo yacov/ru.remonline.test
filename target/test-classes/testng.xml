@@ -10,7 +10,7 @@
     </run> -->
   </groups>
 		<classes>
-		    <class name="ru.telran.sel.LoginTests"/>
+		    <class name="ru.telran.sel.RegistTests"/>
 		</classes>
 	</test>  
 </suite>

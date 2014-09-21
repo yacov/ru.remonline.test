@@ -1,88 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Tests" duration-ms="17538" started-at="2014-08-31T09:59:38Z" finished-at="2014-08-31T09:59:55Z">
+  <suite name="Tests" duration-ms="15031" started-at="2014-09-21T12:49:43Z" finished-at="2014-09-21T12:49:58Z">
     <groups>
-      <group name="negative">
-        <method signature="LoginTests.loginNegTest(java.lang.String, java.lang.String)[pri:0, instance:ru.telran.sel.LoginTests@62043840]" name="loginNegTest" class="ru.telran.sel.LoginTests"/>
-      </group> <!-- negative -->
     </groups>
-    <test name="Test1" duration-ms="17538" started-at="2014-08-31T09:59:38Z" finished-at="2014-08-31T09:59:55Z">
-      <class name="ru.telran.sel.LoginTests">
-        <test-method status="PASS" signature="init()[pri:0, instance:ru.telran.sel.LoginTests@62043840]" name="init" is-config="true" duration-ms="8048" started-at="2014-08-31T12:59:38Z" finished-at="2014-08-31T12:59:46Z">
+    <test name="Test1" duration-ms="15031" started-at="2014-09-21T12:49:43Z" finished-at="2014-09-21T12:49:58Z">
+      <class name="ru.telran.sel.RegistTests">
+        <test-method status="PASS" signature="init()[pri:0, instance:ru.telran.sel.RegistTests@246ae04d]" name="init" is-config="true" duration-ms="4789" started-at="2014-09-21T15:49:43Z" finished-at="2014-09-21T15:49:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="loginNegTest(java.lang.String, java.lang.String)[pri:0, instance:ru.telran.sel.LoginTests@62043840]" name="loginNegTest" duration-ms="3999" started-at="2014-08-31T12:59:46Z" data-provider="loadUserFromFile" finished-at="2014-08-31T12:59:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[demo30]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[ ]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="testRegistr1()[pri:0, instance:ru.telran.sel.RegistTests@246ae04d]" name="testRegistr1" duration-ms="10228" started-at="2014-09-21T15:49:48Z" finished-at="2014-09-21T15:49:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginNegTest -->
-        <test-method status="PASS" signature="loginNegTest(java.lang.String, java.lang.String)[pri:0, instance:ru.telran.sel.LoginTests@62043840]" name="loginNegTest" duration-ms="1817" started-at="2014-08-31T12:59:50Z" data-provider="loadUserFromFile" finished-at="2014-08-31T12:59:52Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[demo30]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[demo30]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginNegTest -->
-        <test-method status="PASS" signature="loginNegTest(java.lang.String, java.lang.String)[pri:0, instance:ru.telran.sel.LoginTests@62043840]" name="loginNegTest" duration-ms="1891" started-at="2014-08-31T12:59:52Z" data-provider="loadUserFromFile" finished-at="2014-08-31T12:59:54Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[username]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[password]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginNegTest -->
-        <test-method status="PASS" signature="loginNegTest(java.lang.String, java.lang.String)[pri:0, instance:ru.telran.sel.LoginTests@62043840]" name="loginNegTest" duration-ms="1761" started-at="2014-08-31T12:59:54Z" data-provider="loadUserFromFile" finished-at="2014-08-31T12:59:55Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ ]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[ ]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginNegTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:ru.telran.sel.LoginTests@62043840]" name="tearDown" is-config="true" duration-ms="303" started-at="2014-08-31T12:59:55Z" finished-at="2014-08-31T12:59:56Z">
+        </test-method> <!-- testRegistr1 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:ru.telran.sel.RegistTests@246ae04d]" name="tearDown" is-config="true" duration-ms="331" started-at="2014-09-21T15:49:58Z" finished-at="2014-09-21T15:49:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- ru.telran.sel.LoginTests -->
+      </class> <!-- ru.telran.sel.RegistTests -->
     </test> <!-- Test1 -->
   </suite> <!-- Tests -->
 </testng-results>
